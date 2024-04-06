@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Basic landing page</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- partial:index.partial.html -->
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width-device-width,initial-scale=1" />
+      <title>PPF UF1843 Edgar</title>
+      <script src="script.js"></script>
+    <link rel="stylesheet" href="./css/sytle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="overlay">
+      <div id="progstat"></div>
+      <div id="progress"></div>
+ </div>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <a href="#"><img src="./imgs/tenerife-bluetrail-logo-color-01.svg" alt="logo"/></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a class="current" href="#"> Carreras</a></li>
+            <li><a href="#"> Corredores</a></li>
+            <li><a href="#"> Descúbrenos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container"> 
+          <h1>Tenerife Blue Trail</h1>
+          </div>
+          <p>
+            Desde el nivel del mar hasta alcanzar los 3.555 metros de altitud en el Teide, el pico más alto de España y el tercer mayor volcán de la Tierra. 
+            Bienvenido a Tenerife, la isla que despierta emociones
+        </p>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Entérate de nuestras próximas carreras</h1>
+      </div>
+    </section>
+    <form id="myForm">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required><br>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+  
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="4" required></textarea><br>
+  
+      <button type="button" onclick="submitForm()">Enviar</button>
+  </form>
+  
+  <div id="displayData"></div>
+  <button onclick="exportTableToExcel('tblData')">Exportar Datos a Archivo Excel</button>
+  <button onclick="exportTableToExcel('tblData', 'members-data')">Exportar tabla de Datos a archivo Excel</button>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="imgs/tf_BLUE_TRAIL_100.jpg" alt="first" />
+          <h3>TENERIFE BLUE TRAIL 110K</h3>
+          <p>
+            Un reto de 110 kilómetros que recorre la isla de sur a norte atravesando el Parque Nacional del Teide
+          </p>
+        </div>
+        <div class="box">
+          <img src="imgs/Tenerife_Blue_Trail_73k.jpg" alt="responsive" />
+          <h3>TENERIFE BLUETRAIL 73K</h3>
+          <p>
+            Una carrera mágica por un paisaje declarado Patrimonio de la Humanidads
+          </p>
+          <button id="color">Deseo mas Información</button>
+
+          <style>
+            #color {
+              transition-property: background-color;
+              transition-duration: 3s;
+            }
+          </style>
+          
+          <script>
+            color.onclick = function() {
+              this.style.backgroundColor = 'red';
+            };
+          </script>
+        </div>
+        <div class="box">
+          <img src="imgs/Tenerife_Blue_Trail_47k.jpg" alt="website" />
+          <h3>TENERIFE BLUETRAIL 47K</h3>
+          <p>
+            Un recorrido entre pinos, brezos y laurisilva
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social">
+        <h3>Síguenos en nuestras redes</h3>
+        <ul>
+          <li>
+            <a href="#"> <img src="./img/facebook.png" alt=""/></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/twitter.png" alt=""/></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/instagram.png" alt=""/></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/linkedin.png" alt=""/></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/pinterest.png" alt=""/></a>
+          </li>
+        </ul>
+      </div>
+      <p>Tenerife Bluetrail &copy; 2019</p>
+    </footer>
+  </body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
